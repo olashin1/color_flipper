@@ -26,6 +26,7 @@ newColorBtnElement.addEventListener("click", () => {
   const randomHex = "#" + getRandomHexString(6);
   document.body.style.backgroundColor = randomHex;
   currentColorElement.style.color = randomHex;
+  currentColorElement.textContent = randomHex;
 });
 
 let getRandomHexValue = () => {
